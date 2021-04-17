@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+html { 
+  background: url("https://i.pinimg.com/originals/5c/fa/d6/5cfad62fb4fb8696f9b9426e7a1b91fb.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+body {
+  margin: 0;
+  font-family: quicksand;
+}
+
+span {
+  padding: 1rem;
+  margin: 0;
+  font-weight: 1000;
+  color: #2b4f60;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+li:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.anchors {
+  font-size: 1.5rem;  
+  color: #45526c;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+#wrapper {
+  margin-top: 2rem;
+}
+
+ /* serchFiled Styles */
+input {
+  border-radius: 50px;
+  width: 18vw;
+  /* height: 5vh; */
+  border: 1px dotted #d8e3e7;
+  transition: width 0.4s ease-in-out;
+  padding: 14px 20px;  
+}
+
+input:focus {
+  width: 30%;
+  outline: none;
+}
+
+button:hover {
+  background-color: #9e9d89;
+  color: #ffffff
+}
+
+button {
+  margin: 0 5px;
+  padding: 0.3rem 2rem;
+  border-radius: 5px;
+  
+  
+  
+}
+
+button:focus {
+  outline: none;
+}
+
+.home {
+  text-align: center;
+}
+
+.products {
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+/* .blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+} */
