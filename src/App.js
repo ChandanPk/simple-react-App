@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
-import './index.css';
+// import './index.css';
 function App() {
 
   const title = 'WELCOME TO MY VLOG';
