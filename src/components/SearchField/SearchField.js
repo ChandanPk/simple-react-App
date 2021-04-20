@@ -2,19 +2,25 @@ import {useState} from 'react';
 
 const SearchField = () => {
 
-    const [values, setValue] = useState(['dairy', 'yoghut', 'paneer', 'milkshake', 'tanay', 'lorem', 'ipsum'])
+    const products = ['dairy', 'yoghut', 'paneer', 'milkshake', 'tanay', 'lorem', 'ipsum'];
 
-const handleInput = (e)=> {
-        setValue(e.target.value);
+    const [searchValue, setSearch] = useState('')
+    
+        const handleInput = (e)=> {
+        setSearch(e.target.value);
 }
+
+        const filteredItem = products.filter(product=> product.includes(searchValue));
+        const buttonVisibility = searchValue.length > 0;
+
 
     return ( 
         <div className="searchField">
         <div className="home">
             <input type="text" name="values" placeholder="Seach for products" onChange={(e)=> handleInput(e)}/>
-            <button>clear</button>
-            <div className="products"><em>{values.map(value=> {
-                return <ul><li>{value}</li></ul>
+            {buttonVisibility && <button>clear</button>}
+            <div className="products"><em>{filteredItem.map(value=> {
+                return <ul key={value}><li>{value}</li></ul>
             })}</em></div>
         </div>
         </div>
